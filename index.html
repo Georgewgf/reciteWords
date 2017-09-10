@@ -1,0 +1,2984 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <title>一小时轻松掌握程序员单词</title>
+    <script src="../workspace/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src='index.js'></script>
+    <style>
+        /*全局reset*/
+        		*{
+        			margin:0px;
+        			padding: 0px;
+        		}
+        		body{
+        			background: #333;
+        			color:#ddd;
+        			margin-bottom: 100px;
+        		}
+        		input,button{
+        			border:none;
+        			outline: none;
+        		}
+        		/*全局reset结束*/
+        
+        		/*banner条开始*/
+        		.banner{
+        			width: 70%;
+        			margin: 0 auto;
+        			margin-top: 30px;
+        			border-radius: 10px;
+        			background: #444;
+        			height: 330px;
+        			padding: 50px 90px;
+        			box-sizing: border-box;
+        		}
+        		.banner .title{
+        			font-size: 60px;
+        			font-family: 宋体;
+        			margin-top: 20px;
+        			margin-bottom: 10px;
+        			color:white;
+        			transition:color 0.35s;
+        		}
+        		.banner .title:hover{
+        			color:#Fc0;
+        		}
+        		.banner .content{
+        			font-size: 21px;
+        			font-weight: 200;
+        			font-family: 宋体;
+        			margin-bottom: 15px;
+        		}
+        		.banner button{
+        			padding: 8px 15px;
+        			font-size: 18px;
+        			border-radius: 6px;
+        			background: #Fc0;
+        			color: #444;
+        			font-weight: 400;
+        			transition:background 0.35s;
+        
+        		}
+        		.banner button:hover{
+        			background: #f90;
+        		}
+        		/*banner条结束*/
+        
+        		/*单词大容器*/
+        		.container{
+        			width: 70%;
+        			margin:0 auto;
+        			margin-top: 50px;
+        			line-height: 25px;
+        			display: flex;
+        			justify-content: space-between;
+        			flex-wrap: wrap;
+        
+        		}
+        		
+        		a{
+        			display: block;
+        			text-align: center;
+        			margin-top: 20px;
+        			font-size: 20px;
+        			color:#fc0;
+        			text-decoration: none;
+        
+        		}
+        		.wordItemBox{
+        			display: inline-block;
+        			width: 370px;
+        
+        			border-radius: 10px;
+        			background: #444;
+        			padding-left: 15px;
+        			padding-right: 15px;
+        			margin-top: 15px;
+        			padding-bottom: 10px;
+        			
+        		}
+        		hr{
+        			height:10px;
+        			border:none;
+        			border-top:1px groove #666;
+        			border-top:1px groove #ddd; 
+        		}
+        		.wordItemBox .word{
+        			color:#fc0;
+        			font-size: 24px;
+        			line-height: 45px;
+        			display: inline-block;
+        			padding-right: 10px;
+        			transition:color 0.35s;
+        		}
+        		.wordItemBox .word:hover{
+        			color:#f90;
+        		}
+        		.wordItemBox .translate{
+        
+        		}
+        		.wordItemBox .pronounce{
+        			display: inline-block;
+        		}
+        		/*单词大容器结束*/
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <p class="title">1小时搞定程序员单词</p>
+        <p class="content">集结了600个程序员常用的单词和词汇，让你写代码变量命名 so easy!!!标准伦敦腔，在线朗读，助你告别尴尬，放声交流！！</p>
+        <button>还等什么！GOGOGO!</button>
+    </div>
+    <div class="container">
+
+        <div class="wordItemBox">
+            <p class="word">application </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">应用程式 应用、应用程序</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">application framework </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">应用程式框架、应用框架 应用程序框架</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">architecture </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">架构、系统架构 体系结构</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">argument </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">引数（传给函式的值）。参见 parameter 参数、实质参数、实参、自变量</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">array </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">阵列 数组</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">arrow operator arrow</p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">（箭头）运算子 箭头操作符</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">assembly </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">装配件</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">assembly language </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">组合语言 汇编语言</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">assert(ion) </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">断言</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">assign </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">指派、指定、设值、赋值 赋值</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">assignment </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">指派、指定 赋值、分配</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">assignment operator </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">指派（赋值）运算子 = 赋值操作符</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">associated </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">相应的、相关的 相关的、关联、相应的</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">associative container </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">关联式容器（对应 sequential container） 关联式容器</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">atomic </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">不可分割的 原子的</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">attribute </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">属性 属性、特性</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">audio </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">音讯 音频</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">A.I. </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">人工智慧 人工智能</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">background </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">背景 背景（用於图形着色） 后台（用於行程）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">backward compatible </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">回溯相容 向下兼容</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">bandwidth </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">频宽 带宽</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">base class </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">基础类别 基类</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">base type </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">基础型别 (等同於 base class)</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">batch </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">批次（意思是整批作业） 批处理</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">benefit </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">利益 收益</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">best viable function </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">最佳可行函式 最佳可行函式 （从 viable functions 中挑出的最佳吻合者）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">binary search </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">二分搜寻法 二分查找</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">binary tree </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">二元树 二叉树</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">binary function </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">二元函式 双参函数</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">binary operator </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">二元运算子 二元操作符</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">binding </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">系结 绑定</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">bit </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">位元 位</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">bit field </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">位元栏 位域</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">bitmap </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">位元图 位图</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">bitwise </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">以 bit 为单元逐一┅</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">bitwise copy </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">以 bit 为单元进行复制；位元逐一复制 位拷贝</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">block </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">区块,区段 块、区块、语句块</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">boolean </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">布林值（真假值，true 或 false） 布尔值</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">border </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">边框、框线 边框</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">brace(curly brace) </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">大括弧、大括号 花括弧、花括号</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">bracket(square brakcet) </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">中括弧、中括号 方括弧、方括号</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">breakpoint </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">中断点 断点</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">build </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">建造、构筑、建置（MS 用语）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">build－in </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">内建 内置</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">bus </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">汇流排 总线</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">business </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">商务,业务 业务</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">buttons </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">按钮 按钮</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">byte </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">位元组（由 8 bits 组成） 字节</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">cache </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">快取 高速缓存</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">call </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">呼叫、叫用 调用</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">callback </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">回呼 回调</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">call operator call</p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">（函式呼叫）运算子调用操作符 ###### （同 function call operator）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">candidate function </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">候选函式 候选函数 ###### （在函式多载决议程序中出现的候选函式）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">chain </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">串链（例 chain of function calls） 链</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">character </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">字元 字符</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">check box </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">核取方块 (i.e. check button) 复选框</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">checked exception </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">可控式异常(Java)</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">check button </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">方钮 (i.e. check box) 复选按钮</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">child class </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">子类别（或称为derived class, subtype） 子类</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">class </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">类别 类</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">class body </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">类别本体 类体</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">class declaration </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">类别宣告、类别宣告式 类声明</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">class definition </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">类别定义、类别定义式 类定义</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">class derivation list </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">类别衍化列 类继承列表</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">class head </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">类别表头 类头</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">class hierarchy </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">类别继承体系, 类别阶层 类层次体系</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">class library </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">类别程式库、类别库 类库</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">class template </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">类别模板、类别范本 类模板</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">class template partial specializations ###### </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">类别模板偏特化 类模板部分特化</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">class template specializations ###### </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">类别模板特化 类模板特化</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">cleanup </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">清理、善后 清理、清除</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">client </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">客端、客户端、客户 客户</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">client－server </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">主从架构 客户/服务器</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">clipboard </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">剪贴簿 剪贴板</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">clone </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">复制 克隆</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">collection </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">群集 集合</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">combo box </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">复合方块、复合框 组合框</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">command line </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">命令列 命令行 (系统文字模式下的整行执行命令)</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">communication </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">通讯 通讯</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">compatible </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">相容 兼容</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">compile time </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">编译期 编译期、编译时</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">compiler </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">编译器 编译器</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">component </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">组件 组件</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">composition </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">复合、合成、组合 组合</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">computer </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">电脑、计算机 计算机、电脑</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">concept </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">概念 概念</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">concrete </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">具象的 实在的</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">concurrent </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">并行 并发</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">configuration </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">组态 配置</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">connection </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">连接，连线（网络,资料库） 连接</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">constraint </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">约束（条件）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">construct </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">构件 构件</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">container </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">容器 容器 ###### （存放资料的某种结构如 list, vector…）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">containment </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">内含 包容</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">context </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">背景关系、周遭环境、上下脉络 环境、上下文</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">control </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">控制元件、控件 控件</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">console </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">主控台 控制台</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">const </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">常数（constant 的缩写，C++ 关键字）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">constant </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">常数（相对於 variable） 常量</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">constructor </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">建构式 构造函数 ###### （与class 同名的一种 member functions）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">copy</p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">动词：复制、拷贝 拷贝</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">copy</p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">名词：复件, 副本</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">cover </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">涵盖 覆盖</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">create </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">创建、建立、产生、生成 创建</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">creation </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">产生、生成 创建</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">cursor </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">游标 光标</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">custom </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">订制、自定 定制</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">data </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">资料 数据</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">database </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">资料库 数据库</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">database schema </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">数据库结构纲目</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">data member </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">资料成员、成员变数 数据成员、成员变量</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">data structure </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">资料结构 数据结构</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">datagram </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">资料元 数据报文</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">dead lock </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">死结 死锁</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">debug </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">除错 调试</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">debugger </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">除错器 调试器</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">declaration </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">宣告、宣告式 声明</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">deduction </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">推导（例：template argument deduction） 推导、推断</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">default </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">预设 缺省、默认</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">defer </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">延缓 推迟</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">define </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">定义 预定义</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">definition </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">定义、定义区、定义式 定义</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">delegate </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">委派、委托、委任 委托</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">delegation </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">（同上）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">demarshal </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">反编列 散集</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">dereference </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">提领（取出指标所指物体的内容） 解参考</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">dereference operator dereference</p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">（提领）运算子 * 解参考操作符</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">derived class </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">衍生类别 派生类</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">design by contract </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">契约式设计</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">design pattern </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">设计范式、设计样式 设计模式 ※ 最近我比较喜欢「设计范式」一词</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">destroy </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">摧毁、销毁</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">destructor </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">解构式 析构函数</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">device </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">装置、设备 设备</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">dialog </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">对话窗、对话盒 对话框</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">directive </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">指令（例：using directive） (编译)指示符</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">directory </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">目录 目录</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">disk </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">碟 盘</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">dispatch </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">分派 分派</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">distributed computing </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">分布式计算 (分布式电算) 分布式计算 分散式计算 (分散式电算)</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">document </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">文件 文档</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">dot operator dot</p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">（句点）运算子 . (圆)点操作符</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">driver </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">驱动程式 驱动（程序）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">dynamic binding </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">动态系结 动态绑定</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">efficiency </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">效率 效率</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">efficient </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">高效 高效</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">end user </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">终端用户</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">entity </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">物体 实体、物体</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">encapsulation </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">封装 封装</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">enclosing class </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">外围类别（与巢状类别 nested class 有关）外围类</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">enum (enumeration) </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">列举（一种 C++ 资料型别） 枚举</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">enumerators </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">列举元（enum 型别中的成员） 枚举成员、枚举器</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">equal </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">相等 相等</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">equality </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">相等性 相等性</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">equality operator equality</p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">（等号）运算子 == 等号操作符</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">equivalence </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">等价性、等同性、对等性 等价性</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">equivalent </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">等价、等同、对等 等价</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">escape code </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">转义码 转义码</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">evaluate </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">评估、求值、核定 评估</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">event </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">事件 事件</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">event driven </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">事件驱动的 事件驱动的</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">exception </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">异常情况 异常</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">exception declaration </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">异常宣告（ref. C++ Primer 3/e, 11.3） 异常声明</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">exception handling </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">异常处理、异常处理机制 异常处理、异常处理机制</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">exception specification </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">异常规格（ref. C++ Primer 3/e, 11.4） 异常规范</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">exit </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">退离（指离开函式时的那一个执行点） 退出</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">explicit </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">明白的、明显的、显式 显式</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">export </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">汇出 引出、导出</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">expression </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">运算式、算式 表达式</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">facility </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">设施、设备 设施、设备</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">feature </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">特性</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">field </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">栏位,资料栏（Java） 字段, 值域（Java）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">file </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">档案 文件</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">firmware </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">韧体 固件</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">flag </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">旗标 标记</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">flash memory </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">快闪记忆体 闪存</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">flexibility </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">弹性 灵活性</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">flush </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">清理、扫清 刷新</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">font </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">字型 字体</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">form </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">表单（programming 用语） 窗体</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">formal parameter </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">形式参数 形式参数</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">forward declaration </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">前置宣告 前置声明</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">forwarding </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">转呼叫,转发 转发</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">forwarding function </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">转呼叫函式,转发函式 转发函数</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">fractal </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">碎形 分形</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">framework </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">框架 框架</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">full specialization </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">全特化（ref. partial specialization）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">function </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">函式、函数 函数</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">function call operator </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">同 call operator</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">function object </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">函式物件（ref. C++ Primer 3/e, 12.3） 函数对象</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">function overloaded resolution </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">函式多载决议程序 函数重载解决（方案）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">functionality </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">功能、机能 功能</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">function template </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">函式模板、函式范本 函数模板</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">functor </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">仿函式 仿函式、函子</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">game </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">游戏 游戏</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">generate </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">生成</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">generic </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">泛型、一般化的 一般化的、通用的、泛化</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">generic algorithm </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">泛型演算法 通用算法</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">getter</p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate"> (相对於 setter) 取值函式</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">global </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">全域的（对应於 local） 全局的</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">global object </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">全域物件 全局对象</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">global scope resolution operator </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">全域生存空间（范围决议）运算子 :: 全局范围解析操作符</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">group </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">群组</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">group box </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">群组方块 分组框</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">guard clause </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">卫述句 (Refactoring, p250) 卫语句</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">GUI </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">图形介面 图形界面</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">hand shaking </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">握手协商</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">handle </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">识别码、识别号、号码牌、权柄 句柄</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">handler </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">处理常式 处理函数</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">hard－coded </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">编死的 硬编码的</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">hard－copy </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">硬拷图 屏幕截图</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">hard disk </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">硬碟 硬盘</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">hardware </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">硬体 硬件</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">hash table </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">杂凑表 哈希表、散列表</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">header file </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">表头档、标头档 头文件</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">heap </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">堆积 堆</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">hierarchy </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">阶层体系 层次结构（体系）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">hook </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">挂钩 钩子</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">hyperlink </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">超链结 超链接</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">icon </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">图示、图标 图标</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">IDE </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">整合开发环境 集成开发环境</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">identifier </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">识别字、识别符号 标识符</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">if and only if </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">若且唯若 当且仅当</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">Illinois </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">伊利诺 伊利诺斯</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">image </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">影像 图象</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">immediate base </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">直接的（紧临的）上层 base class。 直接上层基类</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">immediate derived </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">直接的（紧临的）下层 derived class。 直接下层派生类</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">immutability </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">不变性</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">immutable </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">不可变（的）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">implement </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">实作、实现 实现</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">implementation </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">实作品、实作体、实作码、实件 实现</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">implicit </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">隐喻的、暗自的、隐式 隐式</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">import </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">汇入 导入</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">increment operator </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">累加运算子 ++ 增加操作符</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">infinite loop </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">无穷回圈 无限循环</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">infinite recursive </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">无穷递回 无限递归</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">information </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">资讯 信息</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">infrastructure </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">公共基础建设</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">inheritance </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">继承、继承机制 继承、继承机制</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">inline </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">行内 内联</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">inline expansion </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">行内展开 内联展开</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">initialization </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">初始化（动作） 初始化</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">initialization list </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">初值列 初始值列表</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">initialize </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">初始化 初始化</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">inner class </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">内隐类别 内嵌类</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">instance </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">实体 实例 ###### （根据某种表述而实际产生的「东西」）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">instantiated </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">具现化、实体化（常应用於 template） 实例化</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">instantiation </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">具现体、具现化实体（常应用於 template） 实例</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">integer (integral) </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">整数（的） 整型（的）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">integrate </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">整合 集成</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">interacts </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">交谈、互动 交互</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">interface </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">介面 接口</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">for GUI </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">介面 界面</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">interpreter </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">直译器 解释器</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">invariants </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">恒常性,约束条件 约束条件</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">invoke </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">唤起 调用</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">iterate </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">迭代（回圈一个轮回一个轮回地进行） 迭代</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">exception </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">异常情况 异常</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">exception declaration </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">异常宣告（ref. C++ Primer 3/e, 11.3） 异常声明</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">exception handling </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">异常处理、异常处理机制 异常处理、异常处理机制</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">exception specification </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">异常规格（ref. C++ Primer 3/e, 11.4） 异常规范</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">exit </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">退离（指离开函式时的那一个执行点） 退出</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">explicit </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">明白的、明显的、显式 显式</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">export </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">汇出 引出、导出</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">expression </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">运算式、算式 表达式</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">facility </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">设施、设备 设施、设备</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">feature </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">特性</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">field </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">栏位,资料栏（Java） 字段, 值域（Java）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">file </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">档案 文件</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">firmware </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">韧体 固件</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">flag </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">旗标 标记</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">flash memory </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">快闪记忆体 闪存</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">flexibility </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">弹性 灵活性</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">flush </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">清理、扫清 刷新</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">font </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">字型 字体</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">form </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">表单（programming 用语） 窗体</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">formal parameter </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">形式参数 形式参数</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">forward declaration </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">前置宣告 前置声明</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">forwarding </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">转呼叫,转发 转发</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">forwarding function </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">转呼叫函式,转发函式 转发函数</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">fractal </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">碎形 分形</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">framework </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">框架 框架</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">full specialization </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">全特化（ref. partial specialization）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">function </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">函式、函数 函数</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">function call operator </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">同 call operator</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">function object </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">函式物件（ref. C++ Primer 3/e, 12.3） 函数对象</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">function overloaded resolution </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">函式多载决议程序 函数重载解决（方案）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">functionality </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">功能、机能 功能</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">function template </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">函式模板、函式范本 函数模板</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">functor </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">仿函式 仿函式、函子</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">game </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">游戏 游戏</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">generate </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">生成</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">generic </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">泛型、一般化的 一般化的、通用的、泛化</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">generic algorithm </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">泛型演算法 通用算法</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">getter (</p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">相对於 setter) 取值函式</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">global </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">全域的（对应於 local） 全局的</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">global object </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">全域物件 全局对象</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">global scope resolution operator </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">全域生存空间（范围决议）运算子 :: 全局范围解析操作符</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">group </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">群组</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">group box </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">群组方块 分组框</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">guard clause </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">卫述句 (Refactoring, p250) 卫语句</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">GUI </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">图形介面 图形界面</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">hand shaking </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">握手协商</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">handle </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">识别码、识别号、号码牌、权柄 句柄</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">handler </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">处理常式 处理函数</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">hard－coded </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">编死的 硬编码的</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">hard－copy </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">硬拷图 屏幕截图</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">hard disk </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">硬碟 硬盘</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">hardware </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">硬体 硬件</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">hash table </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">杂凑表 哈希表、散列表</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">header file </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">表头档、标头档 头文件</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">heap </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">堆积 堆</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">hierarchy </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">阶层体系 层次结构（体系）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">hook </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">挂钩 钩子</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">hyperlink </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">超链结 超链接</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">icon </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">图示、图标 图标</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">IDE </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">整合开发环境 集成开发环境</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">identifier </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">识别字、识别符号 标识符</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">if and only if </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">若且唯若 当且仅当</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">Illinois </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">伊利诺 伊利诺斯</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">image </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">影像 图象</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">immediate base </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">直接的（紧临的）上层 base class。 直接上层基类</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">immediate derived </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">直接的（紧临的）下层 derived class。 直接下层派生类</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">immutability </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">不变性</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">immutable </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">不可变（的）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">implement </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">实作、实现 实现</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">implementation </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">实作品、实作体、实作码、实件 实现</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">implicit </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">隐喻的、暗自的、隐式 隐式</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">import </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">汇入 导入</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">increment operator </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">累加运算子 ++ 增加操作符</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">infinite loop </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">无穷回圈 无限循环</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">infinite recursive </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">无穷递回 无限递归</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">information </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">资讯 信息</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">infrastructure </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">公共基础建设</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">inheritance </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">继承、继承机制 继承、继承机制</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">inline </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">行内 内联</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">inline expansion </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">行内展开 内联展开</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">initialization </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">初始化（动作） 初始化</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">initialization list </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">初值列 初始值列表</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">initialize </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">初始化 初始化</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">inner class </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">内隐类别 内嵌类</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">instance </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">实体 实例 ###### （根据某种表述而实际产生的「东西」）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">instantiated </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">具现化、实体化（常应用於 template） 实例化</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">instantiation </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">具现体、具现化实体（常应用於 template） 实例</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">integer (integral) </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">整数（的） 整型（的）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">integrate </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">整合 集成</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">interacts </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">交谈、互动 交互</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">interface </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">介面 接口</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">for GUI </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">介面 界面</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">interpreter </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">直译器 解释器</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">invariants </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">恒常性,约束条件 约束条件</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">invoke </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">唤起 调用</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">iterate </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">迭代（回圈一个轮回一个轮回地进行） 迭代</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">iterative </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">反覆的，迭代的</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">iterator </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">迭代器（一种泛型指标） 迭代器</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">iteration </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">迭代（回圈每次轮回称为一个 iteration） 迭代</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">item </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">项目、条款 项、条款、项目</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">laser </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">雷射 激光</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">level </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">阶 层 (级) 例 high level 高阶 高层</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">library </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">程式库、函式库 库、函数库</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">lifetime </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">生命期、寿命 生命期、寿命</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">link </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">联结、连结 连接,链接</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">linker </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">联结器、连结器 连接器</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">literal constant </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">字面常数（例 3.14 或 “hi” 这等常数值） 字面常数</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">list </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">串列（linked－list） 列表、表、链表</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">list box </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">列表方块、列表框 列表框</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">load </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">载入 装载</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">loader </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">载入器 装载器、载入器</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">local </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">区域的（对应於 global） 局部的</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">local object </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">区域物件 局部对象</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">lock </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">机锁</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">loop </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">回圈 循环</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">lvalue </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">左值 左值</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">macro </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">巨集 宏</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">magic number </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">魔术数字 魔法数</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">maintain </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">维护 维护</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">manipulator </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">操纵器（iostream 预先定义的一种东西） 操纵器</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">marshal </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">编列 列集 参考 demarshal</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">mechanism </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">机制 机制</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">member </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">成员 成员</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">member access operator </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">成员取用运算子（有 dot 和 arrow 两种） 成员存取操作符</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">member function </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">成员函式 成员函数</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">member initialization list </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">成员初值列 成员初始值列表</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">memberwise </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">以 member 为单元┅、members 逐一┅ 以成员为单位</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">memberwise copy </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">以 members 为单元逐一复制</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">memory </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">记忆体 内存</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">menu </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">表单、选单 菜单</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">message </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">讯息 消息</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">message based </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">以讯息为基础的 基於消息的</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">message loop </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">讯息回圈 消息环</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">method (java) </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">方法、行为、函式 方法</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">meta－ </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">超－ 元－ 例 meta－programming 超编程 元编程</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">micro </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">微 微</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">middleware </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">中介层 中间件</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">modeling </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">模塑</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">modeling language </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">塑模语言，建模语言</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">modem </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">数据机 调制解调器</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">module </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">模组 模块</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">modifier </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">饰词 修饰符</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">most derived class </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">最末层衍生类别 最底层的派生类</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">mouse </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">滑鼠 鼠标</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">mutable </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">可变的 可变的</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">multi－tasking </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">多工 多任务</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">namespace </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">命名空间 名字空间、命名空间</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">native </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">原生的 本地的、固有的</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">nested class </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">巢状类别 嵌套类</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">network </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">网路 网络</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">network card </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">网路卡 网卡</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">object </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">物件 对象</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">object based </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">以物件为基础的 基於对象的</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">object file </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">目的档 目标文件</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">object model </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">物件模型 对象模型</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">object oriented </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">物件导向的 面向对象的</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">online </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">线上 在线</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">opaque </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">不透明的</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">operand </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">运算元 操作数</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">operating system (OS) </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">作业系统 操作系统</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">operation </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">操作、操作行为 操作</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">operator </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">运算子 操作符、运算符</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">option </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">选项，可选方案 选项</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">ordinary </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">常规的 常规的</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">overflow </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">上限溢位（相对於 underflow） 溢出（underflow:下溢）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">overhead </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">额外负担、额外开销 额外开销</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">overload </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">多载化、多载化、重载 重载</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">overloaded function </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">多载化函式 重载的函数</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">overloaded operator </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">多载化运算子 被重载的操作符</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">overloaded set </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">多载集合 重载集合</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">override </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">改写、覆写 重载、改写、重新定义 ###### （在 derived class 中重新定义虚拟函式</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">package </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">套件 包</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">pair </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">对组</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">palette </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">调色盘、组件盘、工具箱</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">pane </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">窗格 窗格 ###### （有时为嵌板之意，例 Java Content Pane）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">parallel </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">平行 并行</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">parameter </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">参数（函式参数列上的变数） 参数、形式参数、形参</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">parameter list </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">参数列 参数列表</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">parent class </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">父类别（或称 base class） 父类</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">parentheses </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">小括弧、小括号 圆括弧、圆括号</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">parse </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">解析 解析</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">part </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">零件 部件</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">partial specialization </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">偏特化（ref. C++ Primer 3/e, 16.10） 局部特化 ###### （ref. full specialization）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">pass by address </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">传址（函式引数的传递方式）（非正式用语）传地址</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">pass by reference </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">传址（函式引数的一种传递方式） 传地址, 按引用传递</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">pass by value </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">传值（函式引数的一种传递方式） 按值传递</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">pattern </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">范式、样式 模式</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">performance </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">效率、性能兼而有之 性能</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">persistence </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">永续性 持久性</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">pixel </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">图素、像素 像素</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">placement delete ref. C++ Primer 3/e, 15.8.</p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">2</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">placement new ref. C++ Primer 3/e, 15.8.</p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">2</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">platform </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">平台 平台</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">pointer </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">指标 指针 址位器（和址参器 reference 形成对映，满好）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">poll </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">轮询 轮询</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">polymorphism </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">多型 多态</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">pop up </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">冒起式、弹出式 弹出式</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">port </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">埠 端口</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">postfix </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">后置式、后序式 后置式</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">precedence </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">优先序（通常用於运算子的优先执行次序）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">prefix </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">前置式、前序式 前置式</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">preprocessor </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">前处理器 预处理器</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">prime </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">质数 素数</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">primitive type </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">基本型别 (不同於 base class,基础类别)</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">print </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">列印 打印</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">printer </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">印表机 打印机</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">priority </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">优先权 (通常用於执行绪获得 CPU 时间的优先次序）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">procedure </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">程序 过程</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">procedural </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">程序性的、程序式的 过程式的、过程化的</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">process </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">行程 进程</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">profile </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">评测 评测</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">profiler </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">效能（效率）评测器 效能（性能）评测器</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">programmer </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">程式员 程序员</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">programming </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">编程、程式设计、程式化 编程</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">progress bar </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">进度指示器 进度指示器</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">project </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">专案 项目、工程</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">property </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">属性</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">protocol </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">协定 协议</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">pseudo code </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">假码、虚拟码、伪码 伪码</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">qualified </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">经过资格修饰（例如加上 scope 运算子） 限定</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">qualifier </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">资格修饰词、饰词 限定修饰词</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">quality </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">品质 质量</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">queue </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">伫列 队列</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">radian </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">径度 弧度</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">radio button </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">圆钮 单选按钮</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">raise </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">引发（常用来表示发出一个 exception） 引起、引发</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">random number </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">随机数、乱数 随机数</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">range </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">范围、区间（用於 STL 时） 范围、区间</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">rank </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">等级、分等（ref. C++Primer 3/e 9,15章） 等级</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">raw </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">生鲜的、未经处理的 未经处理的</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">record </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">记录 记录</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">recordset </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">记录集 记录集</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">recursive </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">递回 递归</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">re－direction </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">重导向 重定向</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">refactoring </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">重构、重整 重构</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">refer </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">取用 参考</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">refer to </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">指向、指涉、指代</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">reference  </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">（C++中类似指标的东西，相当於 “化身”） 引用、参考 址参器, see pointer</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">register </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">暂存器 寄存器</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">reflection </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">反射 反射、映像</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">relational database </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">关联式资料库 关系数据库</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">represent </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">表述，表现 表述，表现</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">resolve </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">决议（为算式中的符号名称寻找 解析 对应之宣告式的过程）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">resolution </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">决议程序、决议过程 解析过程</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">resolution </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">解析度 分辨率</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">restriction </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">局限</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">return </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">传回、回返 返回</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">return type </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">回返型别 返回类型</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">return value </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">回返值 返回值</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">robust </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">强固、稳健 健壮</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">robustness </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">强固性、稳健性 健壮性</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">routine </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">常式 例程</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">runtime </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">执行期 运行期、运行时</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">common language runtime </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">(CLR)译为「通用语言执行层」</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">rvalue </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">右值 右值</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">save </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">储存 存储</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">schedule </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">排程 调度</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">scheduler </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">排程器 调度程序</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">scheme </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">结构纲目、组织纲目</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">scroll bar </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">卷轴 滚动条</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">scope </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">生存空间、生存范围、范畴、作用域 生存空间</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">scope operator </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">生存空间（范围决议）运算子 :: 生存空间操作符</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">scope resolution operator </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">生存空间决议运算子 生存空间解析操作符 ###### （与scope operator同）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">screen </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">萤幕 屏幕</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">search </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">搜寻 查找</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">semantics </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">语意 语义</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">sequential container </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">序列式容器 顺序式容器 ###### （对应於 associative container）</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">server </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">伺服器、伺服端 服务器、服务端</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">serial </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">串行</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">serialization </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">次第读写,序列化 序列化 (serialize)</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">setter (</p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">相对於 getter) 设值函式</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">signal </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">信号</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">signature </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">标记式、签名式、署名式 签名</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">slider </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">滚轴 滑块</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">slot </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">条孔、槽 槽</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">smart pointer </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">灵巧指标、精灵指标 智能指针</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">snapshot </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">萤幕快照（图） 屏幕截图</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">specialization </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">特殊化、特殊化定义、特殊化宣告 特化</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">specification </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">规格 规格、规范</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">splitter </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">分裂视窗 切分窗口</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">software </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">软体 软件</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">solution </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">解法,解决方案 方案</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">source </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">原始码 源码、源代码</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">stack </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">堆叠 栈</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">stack unwinding </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">堆叠辗转开解（此词用於 exception 主题） 栈辗转开解 *</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">standard library </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">标准程式库</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">standard template library </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">标准模板程式库</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">statement </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">述句 语句、声明</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">status bar </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">状态列、状态栏 状态条</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">STL </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">见 standard template library</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">stream </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">资料流、串流 流</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">string </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">字串 字符串</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">subroutin</p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">e</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">subscript operator </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">下标运算子 [ ] 下标操作符</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">subtype </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">子型别 子类型</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">support </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">支援 支持</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">suspend </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">虚悬 挂起</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">symbol </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">符号 记号</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">syntax </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">语法 语法</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">tag </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">标签 标记 索引标签,页签</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">target </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">标的（例 target pointer：标的指标） 目标</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">task switch </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">工作切换 任务切换</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">template </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">模板、范本 模板</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">template argument deduction </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">模板引数推导 模板参数推导</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">template explicit specialization </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">模板显式特化（版本） 模板显式特化</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">template parameter </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">模板参数 模板参数</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">temporary object </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">暂时物件 临时对象</p>
+        </div>
+        <div class="wordItemBox">
+            <p class="word">text </p><img class="pronounce" src="pronounce.png" alt="voice">
+            <hr>
+            <p class="translate">文字 文本</p>
+        </div>
+    </div>
+    <audio id="audio" src="http://tsn.baidu.com/text2audio?tex=hello&lan=zh&cuid=george199108251258&ctp=1&tok=24.4d62275a70cf50459cc18c3e3d34f2c8.2592000.1507285719.282335-10102586"></audio>
+</body>
+<script>
+    var url = $('#audio').attr('src');
+
+    // 点击发音图标里发音
+    $('img.pronounce').click(function(){
+        var word = $(this).parent().find('p').eq(0).text();
+        newurl = url.replace('hello',word);
+        $('#audio').attr('src',newurl).trigger('play');
+    });
+
+    // 点击单词时发音
+    $('p.word').click(function(){
+        var word = $(this).text();
+        newurl = url.replace('hello',word);
+        $('#audio').attr('src',newurl).trigger('play');
+    })
+
+    $('.banner button').click(function(){
+        $(window).scrollTop(404);
+    })
+</script>
+
+</html>
