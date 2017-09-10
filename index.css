@@ -1,0 +1,116 @@
+/*全局reset*/
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    background: #333;
+    color:#ddd;
+    margin-bottom: 100px;
+}
+input,button{
+    border:none;
+    outline: none;
+}
+/*全局reset结束*/
+
+/*banner条开始*/
+.banner{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    background: #444;
+    height: 330px;
+    padding: 50px 90px;
+    box-sizing: border-box;
+}
+.banner .title{
+    font-size: 60px;
+    font-family: 宋体;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color:white;
+    transition:color 0.35s;
+}
+.banner .title:hover{
+    color:#Fc0;
+}
+.banner .content{
+    font-size: 21px;
+    font-weight: 200;
+    font-family: 宋体;
+    margin-bottom: 15px;
+}
+.banner button{
+    padding: 8px 15px;
+    font-size: 18px;
+    border-radius: 6px;
+    background: #Fc0;
+    color: #444;
+    font-weight: 400;
+    transition:background 0.35s;
+
+}
+.banner button:hover{
+    background: #f90;
+}
+/*banner条结束*/
+
+/*单词大容器*/
+.container{
+    width: 70%;
+    margin:0 auto;
+    margin-top: 50px;
+    line-height: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+a{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color:#fc0;
+    text-decoration: none;
+
+}
+.wordItemBox{
+    display: inline-block;
+    width: 370px;
+
+    border-radius: 10px;
+    background: #444;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    
+}
+hr{
+    height:10px;
+    border:none;
+    border-top:1px groove #666;
+    border-top:1px groove #ddd; 
+}
+.wordItemBox .word{
+    color:#fc0;
+    font-size: 24px;
+    line-height: 45px;
+    display: inline-block;
+    padding-right: 10px;
+    transition:color 0.35s;
+}
+.wordItemBox .word:hover{
+    color:#f90;
+}
+.wordItemBox .translate{
+
+}
+.wordItemBox .pronounce{
+    display: inline-block;
+}
+/*单词大容器结束*/
